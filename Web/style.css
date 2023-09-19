@@ -55,7 +55,7 @@ nav li a:hover {
 
 body {
 	  font-size: 20px; margin:0 auto; overflow: auto; min-width: 640px; background:#CAD2C5;
-	  background-image: url(images/minecraft-background1.jpg);
+	  background-image: url(Images/minecraft-background1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
