@@ -66,7 +66,7 @@ a {color: #4b871d;}
 	.nav {background: #181816;}
 	.f {background: #181816;}
 	.nav img {-webkit-filter: invert(100%);}
-	background-image: url(images/minecraft-background-dark.jpg);
+	background-image: url(Images/minecraft-background-dark.jpg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
 }
