@@ -3,7 +3,7 @@
 }
 .sidebar {
 	float: left;
-	width: 9em;
+	width: 11em;
 	padding: 2px 1em 5px 1em;
 	position: absolute;
 }
@@ -40,7 +40,6 @@
 div.nav {
     display: block;
     text-align: center;
-    background: rgba(220, 220, 220, 0.7);
     border-color: #101010;
     font-size: 25px;
 }
@@ -72,9 +71,7 @@ a {color: #4b871d;}
 	
 }
 .g {position: relative; width: 75%; margin:0 auto; background: rgba(220, 220, 220, 0.7); padding:5px;}
-.f {vertical-align: top; margin: 0 11em 0 11em;
-	padding: 10px 20px 20px;
-	background: rgba(220, 220, 220, 1); min-width: 350px;}
+.f {float: top; margin: 0 13em 0 13em; padding: 80px; padding-top: 10px; background: rgba(225, 225, 225, 0.75); min-width: 350px; backdrop-filter: blur(15px);}
 
 .illustration-block{
 	float: left;
