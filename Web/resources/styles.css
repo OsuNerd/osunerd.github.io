@@ -71,7 +71,9 @@ a {color: #4b871d;}
 	
 }
 .g {position: relative; width: 75%; margin:0 auto; background: rgba(220, 220, 220, 0.7); padding:5px;}
-.f {float: top; margin: 0 13em 0 13em; padding: 80px; padding-top: 10px; background: rgba(225, 225, 225, 0.75); min-width: 350px; backdrop-filter: blur(15px);}
+.f {vertical-align: top; margin: 0 13em 0 13em;
+	padding: 10px 80px 80px;
+	background: rgba(225, 225, 225, 0.75); min-width: 350px; backdrop-filter: blur(15px);}
 
 .illustration-block{
 	float: left;
