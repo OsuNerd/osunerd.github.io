@@ -13,25 +13,38 @@
 			var element = document.body;
 			element.classList.toggle("dark-mode");
 		}
+		function menuToggle() {
+			var element = document.body;
+			element.classList.toggle("menu-toggle");
+		}
 	</script>
 </head>
 <body>
 	<div id="page-container">
 		<div id="content-wrap">
+			<div class="menu-button">
+				<img src="resources/images/menu-icon.png" alt="burger icon" width="70" onclick="menuToggle()">
+			</div>
 			<div class="sidebar">
-				<div class="logo" align="center">
+				<div class="logo">
 					<a href="index.html"><img src='resources/images/logo.png' alt="Transparent Png" width="150"></a>
 				</div>
 				<div class="nav">
 					<nav>
 					<ul>
 						<li><a href="index.html" data-key="menu-main">Main page</a></li>
-						<li><a href="getting_started.html">Getting started</a></li>
-						<li><a href="content_creators.html">Content creators</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="about_us.html">About us</a></li>
+						<li><a href="getting_started.html" data-key="getting-started">Getting started</a></li>
+						<li><a href="content_creators.html" data-key="content-creators">Content creators</a></li>
+						<li><a href="gallery.html" data-key="gallery">Gallery</a></li>
+						<li><a href="about_us.html" data-key="about">About us</a></li>
+						<li>
+							<div>
+								<a href="#" onclick="changeLanguageButtonClick('en')">Eng</a>
+								<a href="#" onclick="changeLanguageButtonClick('ua')">Укр</a>
+							</div>
+						</li>
 					</ul>
-					<div align="center">
+					<div>
 						<img src="resources/images/mode.svg" alt="Toggle dark mode" class="c" onclick="myFunction()" width=50%/>
 					</div>
 					</nav>
@@ -40,47 +53,47 @@
 			<div class="f">
 				<h1 style="text-align: center;">&nbsp;Minecraft Helping Service</h1>
 				<hr />
-				<h3 style="text-align: center;">Popular content creators</h3>
+				<h3 style="text-align: center;" data-key="creators-title">Popular content creators</h3>
 				<div>
 					<hr/>
-					<p><span>We're happy to present to you numerous content creators that our command deemed reliable and fitting to teach new players various things about Minecraft. Please, check them out and have fun learning!</span>
+					<p><span data-key="creators-subtitle">creators list</span>
 					</p>
 
-					<h1 style="text-align: center;">EN speaking</h1>
+					<h1 style="text-align: center;" data-key="creators-en">EN speaking</h1>
 					<div style="min-height: 600px; grid-gap: 20px;" class="grid4-adapt">
 
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaRmwsixWO3MKtvZru-1jYMBPIijQr12eblGjcpSYg=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@ThatMumboJumbo"><h3>Mumbo Jumbo</h3></a>
-							<p>Redstone expert<br>SMP member</p>
+							<p data-key="creators-mumbo">Redstone expert<br>SMP member</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaRPrZnhKKx6t_uNfrcjrpIJQCNbjHPw3RiWIMEdsw=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@Grian"><h3>Grian</h3></a>
-							<p>Decoration expert<br>SMP member</p>
+							<p data-key="creators-grain">Decoration expert<br>SMP member</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaS24nn01OYfiBFd4gyjEf6DY5BX6pruLfZLnRzZHw=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@wattlesplays"><h3>Wattles</h3></a>
-							<p>Update reviewer<br>Survival tutorial series</p>
+							<p data-key="creators-wattles">Update reviewer<br>Survival tutorial series</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaQ5y6_L2nwSaGyOA8Ry1EQhS7xnYmp2fK0ma6tGTA=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@xisumavoid"><h3>xisumavoid</h3></a>
-							<p>Update reviewer<br>SMP member</p>
+							<p data-key="creators-void">Update reviewer<br>SMP member</p>
 						</div>
 
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaSEgMebpPLh0ae6Mgoloog5R7_tW97LdCK6lQF3TQ=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@Technoblade"><h3>Technoblade</h3></a>
-							<p>Never dies<br>PVP master</p>
+							<p data-key="creators-technoblade">Never dies<br>PVP master</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaSc3wI7nGAjpKeQKqBtoZZz8osfUm3G6S5iSmoh=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@ilmango"><h3>ilmango</h3></a>
-							<p>Farm designer<br>Tech SMP member</p>
+							<p data-key="creators-ilmango">Farm designer<br>Tech SMP member</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaTzL_A9T97CWSsxtC2AnU21QRPKyPUQiWATIzOTwA=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@ph1lza"><h3>Ph1lza</h3></a>
-							<p>Expert hardcore player<br>Good all-around player</p>
+							<p data-key="creators-philza">Expert hardcore player<br>Good all-around player</p>
 						</div>
 						<div style="text-align: center;"><img src='https://yt3.googleusercontent.com/ytc/AOPolaRpFlwa5hMCuuEpscXM64k3ElVPAhbLfHtF8DYY4A=s176-c-k-c0x00ffffff-no-rj' alt="Profile picture" style="border-radius: 50%;">
 							<a href="https://www.youtube.com/@GoodTimesWithScar"><h3>GoodTimesWithScar</h3></a>
-							<p>Decoration expert<br>SMP member</p>
+							<p data-key="creators-goodtimes">Decoration expert<br>SMP member</p>
 						</div>
 
 					</div>

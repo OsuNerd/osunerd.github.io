@@ -13,11 +13,18 @@
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
+        function menuToggle() {
+            var element = document.body;
+            element.classList.toggle("menu-toggle");
+        }
     </script>
 </head>
 <body>
 <div id="page-container">
     <div id="content-wrap">
+        <div class="menu-button">
+            <img src="resources/images/menu-icon.png" alt="burger icon" width="70" onclick="menuToggle()">
+        </div>
         <div class="sidebar">
             <div class="logo">
                 <a href="index.html"><img src='resources/images/logo.png' alt="Transparent Png" width="150"></a>
@@ -26,10 +33,16 @@
                 <nav>
                     <ul>
                         <li><a href="index.html" data-key="menu-main">Main page</a></li>
-                        <li><a href="getting_started.html">Getting started</a></li>
-			<li><a href="content_creators.html">Content creators</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="about_us.html">About us</a></li>
+                        <li><a href="getting_started.html" data-key="getting-started">Getting started</a></li>
+                        <li><a href="content_creators.html" data-key="content-creators">Content creators</a></li>
+                        <li><a href="gallery.html" data-key="gallery">Gallery</a></li>
+                        <li><a href="about_us.html" data-key="about">About us</a></li>
+                        <li>
+                            <div>
+                                <a href="#" onclick="changeLanguageButtonClick('en')">Eng</a>
+                                <a href="#" onclick="changeLanguageButtonClick('ua')">Укр</a>
+                            </div>
+                        </li>
                     </ul>
                     <div>
                         <img src="resources/images/mode.svg" alt="Toggle dark mode" class="c" onclick="myFunction()"
@@ -41,7 +54,7 @@
         <div class="f">
             <h1 style="text-align: center;">&nbsp;Minecraft Helping Service</h1>
             <hr/>
-            <h3 style="text-align: center;">Gallery</h3>
+            <h3 style="text-align: center;" data-key="gallery">Gallery</h3>
             <div class="gallery">
                 <img src="resources/images/1.png" alt="Walkthroughs - Minecraft Guide"/>
                 <img src="resources/images/1.1.png" alt="How to Make Planks in Minecraft"/>

@@ -5,7 +5,7 @@
 	float: left;
 	width: 11em;
 	padding: 2px 1em 5px 1em;
-	position: absolute;
+	position: fixed;
 }
 .sidebar h3 {
 	font-size: 0.75em;
@@ -37,6 +37,20 @@
     text-shadow: 0 1px 0 #2a631c;
 
 }
+
+.nav div a{
+	width: 5.5em;
+	display: inline-block;
+	color: #fff;
+	line-height: 3em;
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	background-color: #4b871d;
+	box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgba(0,0,0,.25);
+	text-shadow: 0 1px 0 #2a631c;
+
+}
 div.nav {
     display: block;
     text-align: center;
@@ -55,14 +69,15 @@ nav li a:hover {
 body {
 	  font-size: 20px; margin:0 auto; overflow: auto; min-width: 640px;
 	background: #CAD2C5 url(images/minecraft-background1.jpg) no-repeat fixed;
+	background-size: cover;
 }
 a {color: #4b871d;}
 .dark-mode {
 	color: #d7d7d7;
-	.nav {background: #181816;}
-	.f {background: #181816;}
+	.f {background: #181816d4;}
 	.nav img {-webkit-filter: invert(100%);}
 	background: #222222 url(images/minecraft-background-dark.jpg) no-repeat fixed;
+	background-size: cover;
 }
 
 .logo {
@@ -117,6 +132,7 @@ a {color: #4b871d;}
 .gallery img {
 	max-height: 300px;
 	max-width: 300px;
+	vertical-align: middle;
 }
 .gallery img:hover {
 	transform: scale(1.5);
@@ -132,6 +148,15 @@ a {color: #4b871d;}
 	grid-template-columns: repeat(3, calc(33% - 15px));
 }
 
+.menu-button{
+	position: fixed; display: none; top: 20px; left: 5px; width: 20px; z-index: 30;
+}
+.menu-toggle{
+	.sidebar {display: block; z-index: 20; padding-top: 5em; width: 8em; background: #4d200091; backdrop-filter: blur(5px)}
+	.logo {display: none;}
+	.menu-button {left: 65px;}
+}
+
 @media (max-width: 1400px) {
 [class="grid4-adapt"] {grid-template-columns: repeat(2, calc(50% - 15px));}
 [class="grid3-adapt"] {grid-template-columns: repeat(2, calc(50% - 15px));}
@@ -139,7 +164,10 @@ a {color: #4b871d;}
 @media (max-width: 1000px) {
 [class="grid4-adapt"] {display: block;}
 [class="grid3-adapt"] {display: block;}
-[class="gallery-type"] {display: block;}
+[class="gallery-type"] {flex-wrap: wrap; flex-direction: column; align-content: center;}
+[class="sidebar"] {display: none;}
+[class="f"] {margin: 0 4em 0 4em}
+[class="menu-button"] {display: initial;}
 }
 	
 hr{ clear:both; }
