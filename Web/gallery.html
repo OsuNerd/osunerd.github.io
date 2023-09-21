@@ -13,11 +13,18 @@
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
+        function menuToggle() {
+            var element = document.body;
+            element.classList.toggle("menu-toggle");
+        }
     </script>
 </head>
 <body>
 <div id="page-container">
     <div id="content-wrap">
+        <div class="menu-button">
+            <img src="resources/images/menu-icon.png" alt="burger icon" width="70" onclick="menuToggle()">
+        </div>
         <div class="sidebar">
             <div class="logo">
                 <a href="index.html"><img src='resources/images/logo.png' alt="Transparent Png" width="150"></a>
