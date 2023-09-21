@@ -38,6 +38,10 @@ let localizationData = {
                 "creators-philza": "Expert hardcore player<br>Good all-around player",
                 "creators-goodtimes": "Decoration expert<br>SMP member",
                 "about-title": "This website was created to teach something about Minecraft and let new players discover high quality content creators. And this group of people made this possible:",
+                "news": "Recent news",
+                "eula-news": "<h2>Minecraft Eula changes</h2>",
+                "java-news": "<h2>Recent Java snapshot</h2>",
+                "bedrock-news": "<h2>Recent Bedrock snapshot</h2>",
                 "footer": "KROK 2023",
             }
         },
@@ -79,6 +83,10 @@ let localizationData = {
                 "creators-philza": "Експерт в важкому виживанні<br>Хороший універсальний гравець",
                 "creators-goodtimes": "Експерт з девору<br>Учасник SMP",
                 "about-title": "Цей сайт був створений, щоб навчити дечому про Minecraft і дозволити новим гравцям відкрити для себе творців високоякісного контенту. І ця група людей зробила це можливим:",
+                "news": "Свіжі новини",
+                "eula-news": "<h2>Зміни у EULA Minecraft</h2>",
+                "java-news": "<h2>Нова Java версія</h2>",
+                "bedrock-news": "<h2>Нова Bedrock версія</h2>",
                 "footer": "КРОК 2023",
             }
         }
