@@ -3,6 +3,10 @@ let localizationData = {
         "en": {
             "strings": {
                 "menu-main": "Main page",
+                "getting-started": "Getting started",
+                "content-creators": "Content creators",
+                "gallery": "Gallery",
+                "about": "About us",
                 "tutorial-title": "Basic Tutorial",
                 "tutorial-first": "<span>As the first day begins, you need to collect </span><a href=\"https://minecraft.fandom.com/wiki/Log\" title=\"Log\">logs</a><span>. \n" +
                     "First, you should look around for </span><a href=\"https://minecraft.fandom.com/wiki/Tree\" title=\"Tree\">trees</a><span>, and go toward any you find, and break their trunks by \"punching wood\" as discussed above.</span>",
@@ -22,18 +26,34 @@ let localizationData = {
                 "sub-punch": "Punching a tree",
                 "sub-craft-planks": "Crafting planks",
                 "sub-craft-sticks": "Crafting sticks",
+                "creators-title": "Popular content creators",
+                "creators-subtitle": "We're happy to present to you numerous content creators that our command deemed reliable and fitting to teach new players various things about Minecraft. Please, check them out and have fun learning!",
+                "creators-en": "English speaking",
+                "creators-mumbo": "Redstone expert<br>SMP member",
+                "creators-grain": "Decoration expert<br>SMP member",
+                "creators-wattles": "Update reviewer<br>Survival tutorial series",
+                "creators-void": "Update reviewer<br>SMP member",
+                "creators-technoblade": "Never dies<br>PVP master",
+                "creators-ilmango": "Farm designer<br>Tech SMP member",
+                "creators-philza": "Expert hardcore player<br>Good all-around player",
+                "creators-goodtimes": "Decoration expert<br>SMP member",
+                "about-title": "This website was created to teach something about Minecraft and let new players discover high quality content creators. And this group of people made this possible:",
                 "footer": "KROK 2023",
             }
         },
         "ua": {
             "strings": {
                 "menu-main": "Головна сторінка",
+                "getting-started": "Початок гри",
+                "content-creators": "Контент мейкери",
+                "gallery": "Галерея",
+                "about": "Про нас",
                 "tutorial-title": "Базовий навчальний курс",
                 "tutorial-first": "<span>На початку першого дня вам потрібно зібрати </span><a href=\"https://minecraft.fandom.com/wiki/Log\" title=\"Колода\">колоди</a><span>. \n" +
-                    "Спершу вам слід пошукати навколо</span><a href=\"https://minecraft.fandom.com/wiki/Tree\" title=\"Дерево\">дерева</a><span>, підійти до будь-якого з них і зламати стовбури, \"пробиваючи деревину\", як описано вище.</span>",
+                    "Спершу вам слід пошукати навколо </span><a href=\"https://minecraft.fandom.com/wiki/Tree\" title=\"Дерево\">дерева</a><span>, підійти до будь-якого з них і зламати стовбури, \"пробиваючи деревину\", як описано вище.</span>",
                 "tutorial-second": "<span>Завжди збирайте всю деревину на дереві, щоб мати більше матеріалів для створення зброї та інструментів. Вам потрібно зібрати принаймні 5-8 колод для першого набору інструментів та предметів, які вам знадобляться одразу. \n" +
                     "Трохи пізніше ви зможете зробити більше, але кілька інструментів зараз допоможуть вам зібрати більше деревини </span><i>набагато</i><span> швидше. \n" +
-                    "AЯк ми вже говорили вище, перше, що потрібно зробити - це </span><a href=\"https://minecraft.fandom.com/wiki/Crafting_table\"\n" +
+                    "Як ми вже говорили вище, перше, що потрібно зробити - це </span><a href=\"https://minecraft.fandom.com/wiki/Crafting_table\"\n" +
                     "                                                                class=\"mw-redirect\" title=\"Crafting table\">стіл для\n" +
                     "                ремесла</a><span>,\n" +
                     " а потім кілька </span><a href=\"https://minecraft.fandom.com/wiki/Stick\" title=\"Stick\">палиць</a><span>.</span>",
@@ -47,6 +67,18 @@ let localizationData = {
                 "sub-punch": "Биття дерева",
                 "sub-craft-planks": "Виготовлення дощок",
                 "sub-craft-sticks": "Виготовлення палиць",
+                "creators-title": "Популярні контент мейкери",
+                "creators-subtitle": "Ми раді представити вам численних авторів контенту, які, на думку нашої команди, заслуговують на довіру та підходять для навчання нових гравців різним речам про Minecraft. Будь ласка, ознайомтеся з ними і насолоджуйтеся навчанням!",
+                "creators-en": "Англомовні автори",
+                "creators-mumbo": "Експерт з редстоуну<br>Учасник SMP",
+                "creators-grain": "Експерт з девору<br>Учасник SMP",
+                "creators-wattles": "Оглядач оновлень<br>Серія посібників по виживанню",
+                "creators-void": "Оглядач оновлень<br>Учасник SMP",
+                "creators-technoblade": "Ніколи не вмирає<br>Майстер PVP",
+                "creators-ilmango": "Дизайнер ферм<br>Учасник технічних SMP",
+                "creators-philza": "Експерт в важкому виживанні<br>Хороший універсальний гравець",
+                "creators-goodtimes": "Експерт з девору<br>Учасник SMP",
+                "about-title": "Цей сайт був створений, щоб навчити дечому про Minecraft і дозволити новим гравцям відкрити для себе творців високоякісного контенту. І ця група людей зробила це можливим:",
                 "footer": "КРОК 2023",
             }
         }
