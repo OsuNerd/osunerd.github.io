@@ -8,12 +8,7 @@
 
     <script type="text/javascript" src="resources/javaScript/localizationManager.js"></script>
     <script type="text/javascript" src="resources/javaScript/localization.js"></script>
-    <script type="text/javascript">
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
+    <script type="text/javascript" src="resources/javaScript/darkMode.js"></script>
 </head>
 <body>
 <div id="page-container">
@@ -38,7 +33,7 @@
                         </li>
                     </ul>
                     <div>
-                        <img src="resources/images/mode.svg" alt="Toggle dark mode" class="c" onclick="myFunction()"
+                        <img src="resources/images/mode.svg" alt="Toggle dark mode" class="c" onclick="toggleDarkMode()"
                              width=50%/>
                     </div>
                 </nav>
