@@ -7,12 +7,21 @@
     <link rel="icon" type="image/png" href="resources/images/icon.png"/>
 
     <script type="text/javascript" src="resources/javaScript/localizationManager.js"></script>
-    <script type="text/javascript" src="resources/javaScript/localization.js"></script>
-    <script type="text/javascript" src="resources/javaScript/darkMode.js"></script>
+  	<script type="text/javascript" src="resources/javaScript/localization.js"></script>
+	<script type="text/javascript" src="resources/javaScript/darkMode.js"></script>
+	<script type="text/javascript">
+		function menuToggle() {
+			var element = document.body;
+			element.classList.toggle("menu-toggle");
+		}
+	</script>
 </head>
 <body>
 <div id="page-container">
     <div id="content-wrap">
+        <div class="menu-button">
+            <img src="resources/images/menu-icon.png" alt="burger icon" width="70" onclick="menuToggle()">
+        </div>
         <div class="sidebar">
             <div class="logo">
                 <a href="index.html"><img src='resources/images/logo.png' alt="Transparent Png" width="150"></a>
@@ -42,38 +51,7 @@
         <div class="f">
             <h1 style="text-align: center;">&nbsp;Minecraft Helping Service</h1>
             <hr/>
-            <h3 style="text-align: center;" data-key="tutorial-title">tutorial</h3>
-            <p></p>
-            <p data-key="tutorial-first"></p>
-            <hr/>
-            <div class="gallery-type">
-                <div class="illustration-block">
-                    <img src="resources/images/1.png" alt="Walkthroughes - Minecraft Guide"/>
-                    <div class="img-title" data-key="sub-punch">Punching a tree</div>
-                </div>
-                <div class="illustration-block">
-                    <img src="resources/images/1.1.png" alt="How to Make Planks in Minecraft"/>
-                    <div class="img-title" data-key="sub-craft-planks">Crafting planks</div>
-                </div>
-                <div class="illustration-block">
-                    <img src="resources/images/2.2.png" alt="How to Make Sticks in Minecraft"/>
-                    <div class="img-title" data-key="sub-craft-sticks">Crafting sticks</div>
-                </div>
-            </div>
-            <hr/>
-            <p data-key="tutorial-second">Collecting logs</p>
-            <hr/>
-            <div class="gallery-type">
-                <div class="illustration-block">
-                    <img src="resources/images/2.png" alt="Crafting in Minecraft - Apex Minecraft Hosting"/>
-                </div>
-                <div class="illustration-block">
-                    <img src="resources/images/3.png" alt="How to Make a Pickaxe in Minecraft"/>
-                </div>
-            </div>
-            <p><span></span></p>
-            <hr/>
-            <p data-key="tutorial-third"></p>
+
         </div>
     </div>
 </div>
