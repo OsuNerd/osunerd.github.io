@@ -172,6 +172,24 @@ a {color: #4b871d;}
 	
 hr{ clear:both; }
 
+.news{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.news-item {
+	float: left;
+	max-width: 700px;
+	margin: 1% 1% 45px 1%;
+}
+.news-item img {width: 100%}
+.news-item:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
 
 .c {display: inline-block; padding: 5px;  text-decoration: none;  color: #000;}
 
